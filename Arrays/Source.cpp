@@ -9,7 +9,7 @@ using std::endl;
 
 #define tab "\t"
 
-const int ROWS = 18;
+const int ROWS = 8;
 const int COLS = 5;
 
 void FillRand(int arr[], const int n);
@@ -1100,7 +1100,7 @@ long long minValueIn(long long arr[ROWS][COLS], const int ROWS, const int COLS)
 	return min;
 }
 
-// Маскимальное значение элементов массива
+// Максимальное значение элементов массива
 
 int maxValueIn(int arr[], const int n)
 {
