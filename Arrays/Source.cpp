@@ -312,20 +312,3 @@ void main()
 	cout << "Массив сдвинут влево на " << number_of_shifts << " шаг(а)-(ов):" << endl << endl;
 	Print(c_arr_2, ROWS, COLS);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
