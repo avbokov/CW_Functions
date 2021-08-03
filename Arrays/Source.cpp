@@ -24,93 +24,30 @@ void FillRand(float arr[ROWS][COLS], const int ROWS, const int COLS);
 void FillRand(long long arr[ROWS][COLS], const int ROWS, const int COLS);
 void FillRand(char arr[ROWS][COLS], const int ROWS, const int COLS);
 
-void Print(int arr[], const int n);
-void Print(double arr[], const int n);
-void Print(float arr[], const int n);
-void Print(long long arr[], const int n);
-void Print(char arr[], const int n);
+template<typename T>void Print(T arr[], const int n);
+template<typename T>void Print(T arr[ROWS][COLS], const int ROWS, const int COLS);
 
-void Print(int arr[ROWS][COLS], const int ROWS, const int COLS);
-void Print(double arr[ROWS][COLS], const int ROWS, const int COLS);
-void Print(float arr[ROWS][COLS], const int ROWS, const int COLS);
-void Print(long long arr[ROWS][COLS], const int ROWS, const int COLS);
-void Print(char arr[ROWS][COLS], const int ROWS, const int COLS);
+template<typename T>void Sort(T arr[], const int n);
+template<typename T>void Sort(T arr[ROWS][COLS], const int ROWS, const int COLS);
 
-void Sort(int arr[], const int n);
-void Sort(double arr[], const int n);
-void Sort(float arr[], const int n);
-void Sort(long long arr[], const int n);
-void Sort(char arr[], const int n);
+template<typename T>T Sum(T arr[], const int n);
+template<typename T>T Sum(T arr[ROWS][COLS], const int ROWS, const int COLS);
 
-void Sort(int arr[ROWS][COLS], const int ROWS, const int COLS);
-void Sort(double arr[ROWS][COLS], const int ROWS, const int COLS);
-void Sort(float arr[ROWS][COLS], const int ROWS, const int COLS);
-void Sort(long long arr[ROWS][COLS], const int ROWS, const int COLS);
-void Sort(char arr[ROWS][COLS], const int ROWS, const int COLS);
+template<typename T>double AVG(T arr[], const int n);
+template<typename T>double AVG(T arr[ROWS][COLS], const int ROWS, const int COLS);
 
-int Sum(int arr[], const int n);
-double Sum(double arr[], const int n);
-float Sum(float arr[], const int n);
-long long Sum(long long arr[], const int n);
+template<typename T>T minValueIn(T arr[], const int n);
+template<typename T>T minValueIn(T arr[ROWS][COLS], const int ROWS, const int COLS);
 
-int Sum(int arr[ROWS][COLS], const int ROWS, const int COLS);
-double Sum(double arr[ROWS][COLS], const int ROWS, const int COLS);
-float Sum(float arr[ROWS][COLS], const int ROWS, const int COLS);
-long long Sum(long long arr[ROWS][COLS], const int ROWS, const int COLS);
+template<typename T>T maxValueIn(T arr[], const int n);
+template<typename T>T maxValueIn(T arr[ROWS][COLS], const int ROWS, const int COLS);
 
-double AVG(int arr[], const int n);
-double AVG(double arr[], const int n);
-float AVG(float arr[], const int n);
-double AVG(long long arr[], const int n);
+template<typename T>void shiftLeft(T arr[], const int n, int number_of_shifts);
+template<typename T>void shiftLeft(T arr[ROWS][COLS], const int ROWS, const int COLS, int number_of_shifts);
 
-double AVG(int arr[ROWS][COLS], const int ROWS, const int COLS);
-double AVG(double arr[ROWS][COLS], const int ROWS, const int COLS);
-float AVG(float arr[ROWS][COLS], const int ROWS, const int COLS);
-double AVG(long long arr[ROWS][COLS], const int ROWS, const int COLS);
+template<typename T>void shiftRight(T arr[], const int n, int number_of_shifts);
+template<typename T>void shiftRight(T arr[ROWS][COLS], const int ROWS, const int COLS, int number_of_shifts);
 
-int minValueIn(int arr[], const int n);
-double minValueIn(double arr[], const int n);
-float minValueIn(float arr[], const int n);
-long long minValueIn(long long arr[], const int n);
-
-int minValueIn(int arr[ROWS][COLS], const int ROWS, const int COLS);
-double minValueIn(double arr[ROWS][COLS], const int ROWS, const int COLS);
-float minValueIn(float arr[ROWS][COLS], const int ROWS, const int COLS);
-long long minValueIn(long long arr[ROWS][COLS], const int ROWS, const int COLS);
-
-int maxValueIn(int arr[], const int n);
-double maxValueIn(double arr[], const int n);
-float maxValueIn(float arr[], const int n);
-long long maxValueIn(long long arr[], const int n);
-
-int maxValueIn(int arr[ROWS][COLS], const int ROWS, const int COLS);
-double maxValueIn(double arr[ROWS][COLS], const int ROWS, const int COLS);
-float maxValueIn(float arr[ROWS][COLS], const int ROWS, const int COLS);
-long long maxValueIn(long long arr[ROWS][COLS], const int ROWS, const int COLS);
-
-void shiftLeft(int arr[], const int n, int number_of_shifts);
-void shiftLeft(double arr[], const int n, int number_of_shifts);
-void shiftLeft(float arr[], const int n, int number_of_shifts);
-void shiftLeft(long long arr[], const int n, int number_of_shifts);
-void shiftLeft(char arr[], const int n, int number_of_shifts);
-
-void shiftLeft(int arr[ROWS][COLS], const int ROWS, const int COLS, int number_of_shifts);
-void shiftLeft(double arr[ROWS][COLS], const int ROWS, const int COLS, int number_of_shifts);
-void shiftLeft(float arr[ROWS][COLS], const int ROWS, const int COLS, int number_of_shifts);
-void shiftLeft(long long arr[ROWS][COLS], const int ROWS, const int COLS, int number_of_shifts);
-void shiftLeft(char arr[ROWS][COLS], const int ROWS, const int COLS, int number_of_shifts);
-
-void shiftRight(int arr[], const int n, int number_of_shifts);
-void shiftRight(double arr[], const int n, int number_of_shifts);
-void shiftRight(float arr[], const int n, int number_of_shifts);
-void shiftRight(long long arr[], const int n, int number_of_shifts);
-void shiftRight(char arr[], const int n, int number_of_shifts);
-
-void shiftRight(int arr[ROWS][COLS], const int ROWS, const int COLS, int number_of_shifts);
-void shiftRight(double arr[ROWS][COLS], const int ROWS, const int COLS, int number_of_shifts);
-void shiftRight(float arr[ROWS][COLS], const int ROWS, const int COLS, int number_of_shifts);
-void shiftRight(long long arr[ROWS][COLS], const int ROWS, const int COLS, int number_of_shifts);
-void shiftRight(char arr[ROWS][COLS], const int ROWS, const int COLS, int number_of_shifts);
 
 void shiftRight_V2(int arr[], const int n, int number_of_shifts);
 
@@ -520,7 +457,7 @@ void FillRand(char arr[ROWS][COLS], const int ROWS, const int COLS)
 
 // Вывод массива на экран
 
-void Print(int arr[], const int n)
+template<typename T>void Print(T arr[], const int n)
 {
 	for (int i = 0; i < n; i++)
 	{
@@ -528,87 +465,7 @@ void Print(int arr[], const int n)
 	}
 }
 
-void Print(double arr[], const int n)
-{
-	for (int i = 0; i < n; i++)
-	{
-		cout << arr[i] << "\t";
-	}
-}
-
-void Print(float arr[], const int n)
-{
-	for (int i = 0; i < n; i++)
-	{
-		cout << arr[i] << "\t";
-	}
-}
-
-void Print(long long arr[], const int n)
-{
-	for (int i = 0; i < n; i++)
-	{
-		cout << arr[i] << "\t";
-	}
-}
-
-void Print(char arr[], const int n)
-{
-	for (int i = 0; i < n; i++)
-	{
-		cout << arr[i] << "\t";
-	}
-}
-
-void Print(int arr[ROWS][COLS], const int ROWS, const int COLS)
-{
-	for (int i = 0; i < ROWS; i++)
-	{
-		for (int j = 0; j < COLS; j++)
-		{
-			cout << arr[i][j] << tab;
-		}
-		cout << endl;
-	}
-}
-
-void Print(double arr[ROWS][COLS], const int ROWS, const int COLS)
-{
-	for (int i = 0; i < ROWS; i++)
-	{
-		for (int j = 0; j < COLS; j++)
-		{
-			cout << arr[i][j] << tab;
-		}
-		cout << endl;
-	}
-}
-
-void Print(float arr[ROWS][COLS], const int ROWS, const int COLS)
-{
-	for (int i = 0; i < ROWS; i++)
-	{
-		for (int j = 0; j < COLS; j++)
-		{
-			cout << arr[i][j] << tab;
-		}
-		cout << endl;
-	}
-}
-
-void Print(long long arr[ROWS][COLS], const int ROWS, const int COLS)
-{
-	for (int i = 0; i < ROWS; i++)
-	{
-		for (int j = 0; j < COLS; j++)
-		{
-			cout << arr[i][j] << tab;
-		}
-		cout << endl;
-	}
-}
-
-void Print(char arr[ROWS][COLS], const int ROWS, const int COLS)
+template<typename T>void Print(T arr[ROWS][COLS], const int ROWS, const int COLS)
 {
 	for (int i = 0; i < ROWS; i++)
 	{
@@ -622,7 +479,7 @@ void Print(char arr[ROWS][COLS], const int ROWS, const int COLS)
 
 // Сортировка массива по возрастанию (алфавиту)
 
-void Sort(int arr[], const int n)
+template<typename T>void Sort(T arr[], const int n)
 {
 	for (int i = 0; i < n; i++)
 	{
@@ -630,7 +487,7 @@ void Sort(int arr[], const int n)
 		{
 			if (arr[j] < arr[i])
 			{
-				int buffer = arr[i];
+				T buffer = arr[i];
 				arr[i] = arr[j];
 				arr[j] = buffer;
 			}
@@ -638,71 +495,7 @@ void Sort(int arr[], const int n)
 	}
 }
 
-void Sort(double arr[], const int n)
-{
-	for (int i = 0; i < n; i++)
-	{
-		for (int j = i + 1; j < n; j++)
-		{
-			if (arr[j] < arr[i])
-			{
-				double buffer = arr[i];
-				arr[i] = arr[j];
-				arr[j] = buffer;
-			}
-		}
-	}
-}
-
-void Sort(float arr[], const int n)
-{
-	for (int i = 0; i < n; i++)
-	{
-		for (int j = i + 1; j < n; j++)
-		{
-			if (arr[j] < arr[i])
-			{
-				float buffer = arr[i];
-				arr[i] = arr[j];
-				arr[j] = buffer;
-			}
-		}
-	}
-}
-
-void Sort(long long arr[], const int n)
-{
-	for (int i = 0; i < n; i++)
-	{
-		for (int j = i + 1; j < n; j++)
-		{
-			if (arr[j] < arr[i])
-			{
-				long long buffer = arr[i];
-				arr[i] = arr[j];
-				arr[j] = buffer;
-			}
-		}
-	}
-}
-
-void Sort(char arr[], const int n) // по алфавиту
-{
-	for (int i = 0; i < n; i++)
-	{
-		for (int j = i + 1; j < n; j++)
-		{
-			if (arr[j] < arr[i])
-			{
-				char buffer = arr[i];
-				arr[i] = arr[j];
-				arr[j] = buffer;
-			}
-		}
-	}
-}
-
-void Sort(int arr[ROWS][COLS], const int ROWS, const int COLS)
+template<typename T>void Sort(T arr[ROWS][COLS], const int ROWS, const int COLS)
 {
 	for (int i = 0; i < ROWS; i++)
 	{
@@ -714,95 +507,7 @@ void Sort(int arr[ROWS][COLS], const int ROWS, const int COLS)
 				{
 					if (arr[k][l] < arr[i][j])
 					{
-						int buffer = arr[i][j];
-						arr[i][j] = arr[k][l];
-						arr[k][l] = buffer;
-					}
-				}
-			}
-		}
-	}
-}
-
-void Sort(double arr[ROWS][COLS], const int ROWS, const int COLS)
-{
-	for (int i = 0; i < ROWS; i++)
-	{
-		for (int j = 0; j < COLS; j++)
-		{
-			for (int k = i; k < ROWS; k++)
-			{
-				for (int l = k == i ? j + 1 : 0; l < COLS; l++)
-				{
-					if (arr[k][l] < arr[i][j])
-					{
-						double buffer = arr[i][j];
-						arr[i][j] = arr[k][l];
-						arr[k][l] = buffer;
-					}
-				}
-			}
-		}
-	}
-}
-
-void Sort(float arr[ROWS][COLS], const int ROWS, const int COLS)
-{
-	for (int i = 0; i < ROWS; i++)
-	{
-		for (int j = 0; j < COLS; j++)
-		{
-			for (int k = i; k < ROWS; k++)
-			{
-				for (int l = k == i ? j + 1 : 0; l < COLS; l++)
-				{
-					if (arr[k][l] < arr[i][j])
-					{
-						float buffer = arr[i][j];
-						arr[i][j] = arr[k][l];
-						arr[k][l] = buffer;
-					}
-				}
-			}
-		}
-	}
-}
-
-void Sort(long long arr[ROWS][COLS], const int ROWS, const int COLS)
-{
-	for (int i = 0; i < ROWS; i++)
-	{
-		for (int j = 0; j < COLS; j++)
-		{
-			for (int k = i; k < ROWS; k++)
-			{
-				for (int l = k == i ? j + 1 : 0; l < COLS; l++)
-				{
-					if (arr[k][l] < arr[i][j])
-					{
-						long long buffer = arr[i][j];
-						arr[i][j] = arr[k][l];
-						arr[k][l] = buffer;
-					}
-				}
-			}
-		}
-	}
-}
-
-void Sort(char arr[ROWS][COLS], const int ROWS, const int COLS)
-{
-	for (int i = 0; i < ROWS; i++)
-	{
-		for (int j = 0; j < COLS; j++)
-		{
-			for (int k = i; k < ROWS; k++)
-			{
-				for (int l = k == i ? j + 1 : 0; l < COLS; l++)
-				{
-					if (arr[k][l] < arr[i][j])
-					{
-						char buffer = arr[i][j];
+						T buffer = arr[i][j];
 						arr[i][j] = arr[k][l];
 						arr[k][l] = buffer;
 					}
@@ -814,9 +519,9 @@ void Sort(char arr[ROWS][COLS], const int ROWS, const int COLS)
 
 // Сумма значений элементов массива
 
-int Sum(int arr[], const int n)
+template<typename T>T Sum(T arr[], const int n)
 {
-	int S = 0;
+	T S = 0;
 	
 	for (int i = 0; i < n; i++)
 	{
@@ -826,84 +531,9 @@ int Sum(int arr[], const int n)
 
 }
 
-double Sum(double arr[], const int n)
+template<typename T>T Sum(T arr[ROWS][COLS], const int ROWS, const int COLS)
 {
-	double S = 0;
-	
-	for (int i = 0; i < n; i++)
-	{
-		S = S + arr[i];
-	}
-	return S;
-}
-
-float Sum(float arr[], const int n)
-{
-	float S = 0;
-	
-	for (int i = 0; i < n; i++)
-	{
-		S = S + arr[i];
-	}
-	return S;
-}
-
-long long Sum(long long arr[], const int n)
-{
-	long long S = 0;
-	
-	for (int i = 0; i < n; i++)
-	{
-		S = S + arr[i];
-	}
-	return S;
-}
-
-int Sum(int arr[ROWS][COLS], const int ROWS, const int COLS)
-{
-	int S = 0;
-
-	for (int i = 0; i < ROWS; i++)
-	{
-		for (int j = 0; j < COLS; j++)
-		{
-			S = S + arr[i][j];
-		}
-	}
-	return S;
-}
-
-double Sum(double arr[ROWS][COLS], const int ROWS, const int COLS)
-{
-	double S = 0;
-
-	for (int i = 0; i < ROWS; i++)
-	{
-		for (int j = 0; j < COLS; j++)
-		{
-			S = S + arr[i][j];
-		}
-	}
-	return S;
-}
-
-float Sum(float arr[ROWS][COLS], const int ROWS, const int COLS)
-{
-	float S = 0;
-
-	for (int i = 0; i < ROWS; i++)
-	{
-		for (int j = 0; j < COLS; j++)
-		{
-			S = S + arr[i][j];
-		}
-	}
-	return S;
-}
-
-long long Sum(long long arr[ROWS][COLS], const int ROWS, const int COLS)
-{
-	long long S = 0;
+	T S = 0;
 
 	for (int i = 0; i < ROWS; i++)
 	{
@@ -917,7 +547,7 @@ long long Sum(long long arr[ROWS][COLS], const int ROWS, const int COLS)
 
 // Среднее арифметическое значений элементов массива
 
-double AVG(int arr[], const int n)
+template<typename T>double AVG(T arr[], const int n)
 {
 	double avg;
 	avg = (double)Sum(arr, n) / n;
@@ -925,49 +555,7 @@ double AVG(int arr[], const int n)
 	// return Sum(arr, n) / n; - более короткий вариант записи
 }
 
-double AVG(double arr[], const int n)
-{
-	double avg;
-	avg = (double)Sum(arr, n) / n;
-	return avg;
-}
-
-float AVG(float arr[], const int n)
-{
-	float avg;
-	avg = (float)Sum(arr, n) / n;
-	return avg;
-}
-
-double AVG(long long arr[], const int n)
-{
-	double avg;
-	avg = Sum(arr, n) / n;
-	return avg;
-}
-
-double AVG(int arr[ROWS][COLS], const int ROWS, const int COLS)
-{
-	double avg;
-	avg = (double)Sum(arr, ROWS, COLS) / (ROWS*COLS);
-	return avg;
-}
-
-double AVG(double arr[ROWS][COLS], const int ROWS, const int COLS)
-{
-	double avg;
-	avg = (double)Sum(arr, ROWS, COLS) / (ROWS * COLS);
-	return avg;
-}
-
-float AVG(float arr[ROWS][COLS], const int ROWS, const int COLS)
-{
-	float avg;
-	avg = (float)Sum(arr, ROWS, COLS) / (ROWS * COLS);
-	return avg;
-}
-
-double AVG(long long arr[ROWS][COLS], const int ROWS, const int COLS)
+template<typename T>double AVG(T arr[ROWS][COLS], const int ROWS, const int COLS)
 {
 	double avg;
 	avg = (double)Sum(arr, ROWS, COLS) / (ROWS*COLS);
@@ -976,9 +564,9 @@ double AVG(long long arr[ROWS][COLS], const int ROWS, const int COLS)
 
 // Минимальное значение элементов массива
 
-int minValueIn(int arr[], const int n)
+template<typename T>T minValueIn(T arr[], const int n)
 {
-	int min = arr[0];
+	T min = arr[0];
 
 	for (int i = 0; i < n; i++)
 	{
@@ -990,102 +578,9 @@ int minValueIn(int arr[], const int n)
 	return min;
 }
 
-double minValueIn(double arr[], const int n)
+template<typename T>T minValueIn(T arr[ROWS][COLS], const int ROWS, const int COLS)
 {
-	double min = arr[0];
-
-	for (int i = 0; i < n; i++)
-	{
-		if (arr[i] < min)
-		{
-			min = arr[i];
-		}
-	}
-	return min;
-}
-
-float minValueIn(float arr[], const int n)
-{
-	float min = arr[0];
-
-	for (int i = 0; i < n; i++)
-	{
-		if (arr[i] < min)
-		{
-			min = arr[i];
-		}
-	}
-	return min;
-}
-
-long long minValueIn(long long arr[], const int n)
-{
-	long long min = arr[0];
-
-	for (int i = 0; i < n; i++)
-	{
-		if (arr[i] < min)
-		{
-			min = arr[i];
-		}
-	}
-	return min;
-}
-
-int minValueIn(int arr[ROWS][COLS], const int ROWS, const int COLS)
-{
-	int min = arr[0][0];
-
-	for (int i = 0; i < ROWS; i++)
-	{
-		for (int j = 0; j < COLS; j++)
-		{
-			if (arr[i][j] < min)
-			{
-				min = arr[i][j];
-			}
-		}
-	}
-	return min;
-}
-
-double minValueIn(double arr[ROWS][COLS], const int ROWS, const int COLS)
-{
-	double min = arr[0][0];
-
-	for (int i = 0; i < ROWS; i++)
-	{
-		for (int j = 0; j < COLS; j++)
-		{
-			if (arr[i][j] < min)
-			{
-				min = arr[i][j];
-			}
-		}
-	}
-	return min;
-}
-
-float minValueIn(float arr[ROWS][COLS], const int ROWS, const int COLS)
-{
-	float min = arr[0][0];
-
-	for (int i = 0; i < ROWS; i++)
-	{
-		for (int j = 0; j < COLS; j++)
-		{
-			if (arr[i][j] < min)
-			{
-				min = arr[i][j];
-			}
-		}
-	}
-	return min;
-}
-
-long long minValueIn(long long arr[ROWS][COLS], const int ROWS, const int COLS)
-{
-	long long min = arr[0][0];
+	T min = arr[0][0];
 
 	for (int i = 0; i < ROWS; i++)
 	{
@@ -1102,9 +597,9 @@ long long minValueIn(long long arr[ROWS][COLS], const int ROWS, const int COLS)
 
 // Максимальное значение элементов массива
 
-int maxValueIn(int arr[], const int n)
+template<typename T>T maxValueIn(T arr[], const int n)
 {
-	int max = arr[0];
+	T max = arr[0];
 
 	for (int i = 0; i < n; i++)
 	{
@@ -1116,51 +611,9 @@ int maxValueIn(int arr[], const int n)
 	return max;
 }
 
-double maxValueIn(double arr[], const int n)
+template<typename T>T maxValueIn(T arr[ROWS][COLS], const int ROWS, const int COLS)
 {
-	double max = arr[0];
-
-	for (int i = 0; i < n; i++)
-	{
-		if (arr[i] > max)
-		{
-			max = arr[i];
-		}
-	}
-	return max;
-}
-
-float maxValueIn(float arr[], const int n)
-{
-	float max = arr[0];
-
-	for (int i = 0; i < n; i++)
-	{
-		if (arr[i] > max)
-		{
-			max = arr[i];
-		}
-	}
-	return max;
-}
-
-long long maxValueIn(long long arr[], const int n)
-{
-	long long max = arr[0];
-
-	for (int i = 0; i < n; i++)
-	{
-		if (arr[i] > max)
-		{
-			max = arr[i];
-		}
-	}
-	return max;
-}
-
-int maxValueIn(int arr[ROWS][COLS], const int ROWS, const int COLS)
-{
-	int max = arr[0][0];
+	T max = arr[0][0];
 
 	for (int i = 0; i < ROWS; i++)
 	{
@@ -1175,64 +628,15 @@ int maxValueIn(int arr[ROWS][COLS], const int ROWS, const int COLS)
 	return max;
 }
 
-double maxValueIn(double arr[ROWS][COLS], const int ROWS, const int COLS)
-{
-	double max = arr[0][0];
 
-	for (int i = 0; i < ROWS; i++)
-	{
-		for (int j = 0; j < COLS; j++)
-		{
-			if (arr[i][j] > max)
-			{
-				max = arr[i][j];
-			}
-		}
-	}
-	return max;
-}
-
-float maxValueIn(float arr[ROWS][COLS], const int ROWS, const int COLS)
-{
-	float max = arr[0][0];
-
-	for (int i = 0; i < ROWS; i++)
-	{
-		for (int j = 0; j < COLS; j++)
-		{
-			if (arr[i][j] > max)
-			{
-				max = arr[i][j];
-			}
-		}
-	}
-	return max;
-}
-
-long long maxValueIn(long long arr[ROWS][COLS], const int ROWS, const int COLS)
-{
-	long long max = arr[0][0];
-
-	for (int i = 0; i < ROWS; i++)
-	{
-		for (int j = 0; j < COLS; j++)
-		{
-			if (arr[i][j] > max)
-			{
-				max = arr[i][j];
-			}
-		}
-	}
-	return max;
-}
 
 // Сдвиг массива влево
 
-void shiftLeft(int arr[], const int n, int number_of_shifts)
+template<typename T>void shiftLeft(T arr[], const int n, int number_of_shifts)
 {
 	for (int i = 0; i < number_of_shifts; i++)
 	{
-		int buffer = arr[0];
+		T buffer = arr[0];
 
 		for (int j = 1; j < n; j++)
 		{
@@ -1242,135 +646,11 @@ void shiftLeft(int arr[], const int n, int number_of_shifts)
 	}
 }
 
-void shiftLeft(double arr[], const int n, int number_of_shifts)
+template<typename T>void shiftLeft(T arr[ROWS][COLS], const int ROWS, const int COLS, int number_of_shifts)
 {
 	for (int i = 0; i < number_of_shifts; i++)
 	{
-		double buffer = arr[0];
-
-		for (int j = 1; j < n; j++)
-		{
-			arr[j - 1] = arr[j];
-		}
-		arr[n - 1] = buffer;
-	}
-}
-
-void shiftLeft(float arr[], const int n, int number_of_shifts)
-{
-	for (int i = 0; i < number_of_shifts; i++)
-	{
-		float buffer = arr[0];
-
-		for (int j = 1; j < n; j++)
-		{
-			arr[j - 1] = arr[j];
-		}
-		arr[n - 1] = buffer;
-	}
-}
-
-void shiftLeft(long long arr[], const int n, int number_of_shifts)
-{
-	for (int i = 0; i < number_of_shifts; i++)
-	{
-		long long buffer = arr[0];
-
-		for (int j = 1; j < n; j++)
-		{
-			arr[j - 1] = arr[j];
-		}
-		arr[n - 1] = buffer;
-	}
-}
-
-void shiftLeft(char arr[], const int n, int number_of_shifts)
-{
-	for (int i = 0; i < number_of_shifts; i++)
-	{
-		char buffer = arr[0];
-
-		for (int j = 1; j < n; j++)
-		{
-			arr[j - 1] = arr[j];
-		}
-		arr[n - 1] = buffer;
-	}
-}
-
-void shiftLeft(int arr[ROWS][COLS], const int ROWS, const int COLS, int number_of_shifts)
-{
-	for (int i = 0; i < number_of_shifts; i++)
-	{
-		int buffer = arr[0][0];
-
-		for (int j = 0; j < ROWS; j++)
-		{
-			for (int k = 0; k < COLS; k++)
-			{
-				arr[j][k] = arr[j][k + 1];
-			}
-		}
-		arr[ROWS - 1][COLS - 1] = buffer;
-	}
-}
-
-void shiftLeft(double arr[ROWS][COLS], const int ROWS, const int COLS, int number_of_shifts)
-{
-	for (int i = 0; i < number_of_shifts; i++)
-	{
-		double buffer = arr[0][0];
-
-		for (int j = 0; j < ROWS; j++)
-		{
-			for (int k = 0; k < COLS; k++)
-			{
-				arr[j][k] = arr[j][k + 1];
-			}
-		}
-		arr[ROWS - 1][COLS - 1] = buffer;
-	}
-}
-
-void shiftLeft(float arr[ROWS][COLS], const int ROWS, const int COLS, int number_of_shifts)
-{
-	for (int i = 0; i < number_of_shifts; i++)
-	{
-		float buffer = arr[0][0];
-
-		for (int j = 0; j < ROWS; j++)
-		{
-			for (int k = 0; k < COLS; k++)
-			{
-				arr[j][k] = arr[j][k + 1];
-			}
-		}
-		arr[ROWS - 1][COLS - 1] = buffer;
-	}
-}
-
-void shiftLeft(long long arr[ROWS][COLS], const int ROWS, const int COLS, int number_of_shifts)
-{
-	for (int i = 0; i < number_of_shifts; i++)
-	{
-		long long buffer = arr[0][0];
-
-		for (int j = 0; j < ROWS; j++)
-		{
-			for (int k = 0; k < COLS; k++)
-			{
-				arr[j][k] = arr[j][k + 1];
-			}
-		}
-		arr[ROWS - 1][COLS - 1] = buffer;
-	}
-}
-
-void shiftLeft(char arr[ROWS][COLS], const int ROWS, const int COLS, int number_of_shifts)
-{
-	for (int i = 0; i < number_of_shifts; i++)
-	{
-		char buffer = arr[0][0];
+		T buffer = arr[0][0];
 
 		for (int j = 0; j < ROWS; j++)
 		{
@@ -1385,11 +665,11 @@ void shiftLeft(char arr[ROWS][COLS], const int ROWS, const int COLS, int number_
 
 // Сдвиг массива вправо
 
-void shiftRight(int arr[], const int n, int number_of_shifts)
+template<typename T>void shiftRight(T arr[], const int n, int number_of_shifts)
 {
 	for (int i = 0; i < number_of_shifts; i++)
 	{
-		int buffer = arr[n - 1];
+		T buffer = arr[n - 1];
 
 		for (int j = n - 1; j > 0; j--)
 		{
@@ -1399,135 +679,11 @@ void shiftRight(int arr[], const int n, int number_of_shifts)
 	}
 }
 
-void shiftRight(double arr[], const int n, int number_of_shifts)
+template<typename T>void shiftRight(T arr[ROWS][COLS], const int ROWS, const int COLS, int number_of_shifts)
 {
 	for (int i = 0; i < number_of_shifts; i++)
 	{
-		double buffer = arr[n - 1];
-
-		for (int j = n - 1; j > 0; j--)
-		{
-			arr[j] = arr[j - 1];
-		}
-		arr[0] = buffer;
-	}
-}
-
-void shiftRight(float arr[], const int n, int number_of_shifts)
-{
-	for (int i = 0; i < number_of_shifts; i++)
-	{
-		float buffer = arr[n - 1];
-
-		for (int j = n - 1; j > 0; j--)
-		{
-			arr[j] = arr[j - 1];
-		}
-		arr[0] = buffer;
-	}
-}
-
-void shiftRight(long long arr[], const int n, int number_of_shifts)
-{
-	for (int i = 0; i < number_of_shifts; i++)
-	{
-		long long buffer = arr[n - 1];
-
-		for (int j = n - 1; j > 0; j--)
-		{
-			arr[j] = arr[j - 1];
-		}
-		arr[0] = buffer;
-	}
-}
-
-void shiftRight(char arr[], const int n, int number_of_shifts)
-{
-	for (int i = 0; i < number_of_shifts; i++)
-	{
-		char buffer = arr[n - 1];
-
-		for (int j = n - 1; j > 0; j--)
-		{
-			arr[j] = arr[j - 1];
-		}
-		arr[0] = buffer;
-	}
-}
-
-void shiftRight(int arr[ROWS][COLS], const int ROWS, const int COLS, int number_of_shifts)
-{
-	for (int i = 0; i < number_of_shifts; i++)
-	{
-		int buffer = arr[ROWS - 1][COLS - 1];
-
-		for (int j = ROWS - 1; j >= 0; j--)
-		{
-			for (int k = COLS - 1; k >= 0; k--)
-			{
-				arr[j][k] = arr[j][k - 1];
-			}
-		}
-		arr[0][0] = buffer;
-	}
-}
-
-void shiftRight(double arr[ROWS][COLS], const int ROWS, const int COLS, int number_of_shifts)
-{
-	for (int i = 0; i < number_of_shifts; i++)
-	{
-		double buffer = arr[ROWS - 1][COLS - 1];
-
-		for (int j = ROWS - 1; j >= 0; j--)
-		{
-			for (int k = COLS - 1; k >= 0; k--)
-			{
-				arr[j][k] = arr[j][k - 1];
-			}
-		}
-		arr[0][0] = buffer;
-	}
-}
-
-void shiftRight(float arr[ROWS][COLS], const int ROWS, const int COLS, int number_of_shifts)
-{
-	for (int i = 0; i < number_of_shifts; i++)
-	{
-		float buffer = arr[ROWS - 1][COLS - 1];
-
-		for (int j = ROWS - 1; j >= 0; j--)
-		{
-			for (int k = COLS - 1; k >= 0; k--)
-			{
-				arr[j][k] = arr[j][k - 1];
-			}
-		}
-		arr[0][0] = buffer;
-	}
-}
-
-void shiftRight(long long arr[ROWS][COLS], const int ROWS, const int COLS, int number_of_shifts)
-{
-	for (int i = 0; i < number_of_shifts; i++)
-	{
-		long long buffer = arr[ROWS - 1][COLS - 1];
-
-		for (int j = ROWS - 1; j >= 0; j--)
-		{
-			for (int k = COLS - 1; k >= 0; k--)
-			{
-				arr[j][k] = arr[j][k - 1];
-			}
-		}
-		arr[0][0] = buffer;
-	}
-}
-
-void shiftRight(char arr[ROWS][COLS], const int ROWS, const int COLS, int number_of_shifts)
-{
-	for (int i = 0; i < number_of_shifts; i++)
-	{
-		char buffer = arr[ROWS - 1][COLS - 1];
+		T buffer = arr[ROWS - 1][COLS - 1];
 
 		for (int j = ROWS - 1; j >= 0; j--)
 		{
